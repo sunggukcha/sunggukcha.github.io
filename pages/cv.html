@@ -23,6 +23,32 @@
             font-family: 'Georgia';
         }
 
+        details {
+            text-align: left;
+        }
+
+        details.expand-section {
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+        }
+
+        details[open] ul {
+            display: block;
+        }
+
+        summary {
+            cursor: pointer;
+            padding: 0;
+            border: none;
+            display: inline;
+            text-align: left;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
         #container {
             background: #ffffff;
             width: 50%;
@@ -63,6 +89,8 @@
             background-image: linear-gradient(to right, transparent, #ccc, transparent); /* Dotted line */
             margin: 20px 0; /* Margin for spacing */
         }
+
+
     </style>
 </head>
 
@@ -87,48 +115,14 @@
             <h2 id="biography">Biography</h2>
             <p style="text-align: left">
                 I am Researcher at the RAG AI Team of LG Uplus.
-                Before that, I have spent wonderful times as a Technical Research Personnel for military duty 
+                Before that, I have spent wonderful times as a Technical Research Personnel for the military duty 
                 working with 
                     <a href="https://scholar.google.co.kr/citations?user=dpCZzMEAAAAJ" target="_blank">Dr. Cheoljong Yang</a>
                     and <a href="https://scholar.google.co.kr/citations?user=09JOeG8AAAAJ" target="_blank">Jusung Lee</a>
                     at <a href="https://ncsoft.com" target="_blank">NCSOFT</a>, 
-                and 
-                    <details>
-                        <summary>a number of beloving colleauges</summary>
-                            <ul>
-                                <li>
-                                    Vision
-                                    <ul>
-                                        <li> <a href="https://github.com/acasia" target="_blank">Jinwoo Kim</a><li>
-                                        <li> <a href="https://youseonglee.github.io/" target="_blank">Youseong Lee</a><li>
-                                        <li> <a href="https://github.com/dhchoi99" target="_blank">Dongho Choi</a><li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    NLP
-                                    <ul>
-                                        <li> <a href="https://github.com/CoaLee" target="_blank">Yongjae Lee</a><li>
-                                        <li> <a href="https://github.com/yjy2026" target="_blank">M.S. Junyeong Yong</a><li>
-                                        <li> <a href="https://aiphabtc-v2.com" target="_blank">Minsuk Kim</a><li>
-                                        <li> <a href="https://github.com/tonyswoo" target="_blank">Sang Hoon Woo</a><li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Audio
-                                    <ul>
-                                        <li> <a href="https://github.com/junjun3518" target="_blank">M.S. Junhyeok Lee</a><li>
-                                        <li> <a href="http://kwkim.me" target="_blank">Kang-Wook Kim</a><li>
-                                        <li> <a href="https://github.com/Seungwoo0326" target="_blank">Seungu Han</a><li>
-                                        <li> <a href="https://scholar.google.com/citations?user=2Yi8qMIAAAAJ&hl=en" target="_blank">Jaeyeon Kim</a><li>
-                                        <li> <a href="https://scholar.google.com/citations?user=JDIgAQMAAAAJ&hl=en" target="_blank">Wonbin Jung</a><li>
-                                    </ul>
-                                </li>
-                                <li><a href="https://www.notion.so/sunggukcha/b1a76dc405094bde9b06729f83e6a22f" target="_blank">Postmortem post</a></li>
-                            </ul>
-                        </details>
-                    at <a href="https://maum.ai" target="_blank">MINDs Lab Inc.</a>. 
-	            I obtained my M.S. degree in UNIST | Ulsan National Institute of Science & Technology. <br>
-
+                and a number of fantastic colleagues at <a href="https://maum.ai" target="_blank">MINDs Lab Inc.</a><br> 
+	            I obtained my M.S. degree in Ulsan National Institute of Science and Technology. <br>
+                <br>
                 My research interests cover the broad area of machine learning, multi-modal learning, computer vision, language modeling and quantitative finance. 
                 My current position focuses on synthesizing train/evaluate data for (vision-)language models. 
             </p>
