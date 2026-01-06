@@ -1,187 +1,202 @@
-<!-- html -->
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungguk Cha Talks</title>
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8HLWH7D"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7VG8HLWH7D');
-    </script>
+    <script src="../scripts.js"></script>
 </head>
-<title> Sungguk Cha Talks </title>
-<center>
-<h2 id="talk">Talks</h2>
-<div id="talks" style="width:50%; text-align: left;">
-<h3 id="conferences">Conferences</h3>
-<ul style="font-family: 'georgia';">
-    <li>
-        LG Software Developer Conference (LG SDC) 2025 <small>Sep. 2025</small>
-        <ul><small>
-            <li>챗봇에 필수가 되어버린 RAG기술, 어떻게 사용되고 어떤 요소기술들이 있을까? <a href="../slides/lgsdc2025.pdf">[pdf]</a></li>
-        </small></ul>
-    </li>
-</ul>
-<h3 id="lg">LG Uplus</h3>
-<small>Aug. 2024 - present</small>
-<ul stype="font-family: 'Georgia';">
-    <li>
-        멀티턴 RAG 리라이터, VQA기반 RAG 데이터 구축기
-        <small>May 2025</small>
-    </li>
-    <li>
-        멀티모달 reasoning 데이터 만들기
-        <small>April 2025</small>
-    </li>
-    <li>
-        싱글턴에서 멀티턴으로 가는 큰 그림
-        <small>Jan. 2025</small>
-    </li>
-    <li>
-        언어모델에 눈 달아주기
-        <small>Sep. 2024</small>
-    </li>
-</ul>
-    
-<h3 id="ncsoft">NCSOFT</h3>
-<small>Sep. 2022 - May 2024</small>
-<ul style="font-family: 'Georgia';">
-    <li>
-        언어모델이 보고 말하도록 가르치기
-        <small> Apr. 2024 </small>
-        <ul><small>
-            <li> Introduction to multimodal visual recognition and reducing visual hallucination </li>
-        </ul></small>
-    </li>
-    <li>
-        ICASSP 2024 highlights
-        <small> Apr. 2024 </small>
-    </li>
-    <li>
-        GPT-4V: 먼저 개발한 사람들의 보고서, 어쩌면 우리 잘 하고 있을지도?
-        <small> Oct. 2023 </small>
-        <ul><small>
-            <li> Introducing (multimodal) large language model and (visual) hallucination </li>
-            <li> Brief introduce to our proposed dehallucinative instruction generation </li>
-            <li> Proposing face understanding data generation for MLLM </li>
-        </ul></small>
-    </li>
-    <li>
-        Review: Grounding Language Models to Images for Multimodal Generation
-        <small> Feb. 2023 </small>
-    </li>
-    <li>
-        Pseudo Labeling with Inter-Emotion Correlation for Facial Emotion Recognition
-        <small> Dec. 2022 </small>
-    </li>
-</ul>
 
-<h3 id="mindslab">MINDs Lab</h3>
-<small>Sep. 2020 - Sep. 2022</small>
-<ul style="font-family: 'Georgia';">
-    <li>
-        Introduction to Human Interaction Recognition
-        <small>Apr. 2021</small>
-        <br> <a href="../slides/(220404) Introduction to Human Interaction Recognition.pdf">[pdf]</a>
-        <a href="https://youtu.be/b6J2yeAF6ec" target="_blank">[youtube]</a>
-    </li>
-    <li>
-        How Segmentation Model Learns? 
-        <small> Dec. 2021</small>
-        <br> Review: Per-Pixel Classification is Not All You Need for Semantic Segmentation
-        <small> Bowen Cheng et al. NeurIPS 2021 </small>
-        <br> <a href="../slides/(211220) How Segmentation Model Learns_ Reviewing Per-Pixel Classification is Not All You Need for Semantic Segmentation.pdf">[pdf]</a>
-    </li>
-    <li>
-        Vision Transformer. 1년이 지난 지금은 어떻게 생겼나?, Transformer에 Convolution을 써보는 것들은 어떨까?
-        <small>Jul. 2021</small>
-    </li>
-    <li>
-        Representation Assemble!
-        <small>Jul. 2021</small>
-        <br>Introduction to Multi-Modal Joint-Representation Learning
-        <br><a href="../slides/(210712) Representation Assemble_ Introduction to Multi-Modal Joint-Representation Learning.pdf">[pdf]</a>
-    </li>
-    <li>
-        VQA Approach & Dataset Survey
-        <small>Apr. 2021</small>
-        <br><a href="../slides/VQA Survey.pdf">[pdf]</a>
-    </li>
-    <li>
-        Are the Relationships of Class Representations in Vision and Language Similar?
-        <small>Mar. 2021</small>
-        <br><a href="../slides/(210315) Are the Relationships of Class Representations in Vision and Language Similar_.pdf">[pdf]</a>
-    </li>
-    <li>
-        Font Style Transfer Survey
-        <small>Mar. 2021</small>
-        <br><a href="../slides/Font Style Transfer Survey (Distribution ver.).pdf">[pdf]</a>
-    </li>
-    <li>
-        Representation Learning:
-        How Should Feature Be Learned in Vision?
-        <small>Feb. 2021</small>
-        <br>Introducing CLIP and an Unsupervised Semantic Segmentation Approach
-        <br> <a href="../slides/(210222) Representation Learning.pdf">[pdf]</a>
-    </li>
-    <li>
-        How Can We Correlate Inter-Domain Knowledge?
-        <small>Dec. 2020</small>
-        <br> Reviewing Consistent Structural Relation Learning for Generalized Zero-Shot Segmentation
-        <small>(Peike <i>et al.</i>, NeurIPS2020) </small>
-        <br/> <a href="../slides/(201221) Review_ Consistent Structural Relation Learning for Generalized Zero-Shot Segmentation.pdf">[pdf]</a>
-    </li>
-    <li>
-        Zero-Shot Semantic Segmentation via Spatial and Multi-Scale Aware Visual Class Embedding
-        <small>Nov. 2020</small>
-    </li>
-</ul>
+<body>
+    <div class="center-content">
+        <h2 id="talk">Talks</h2>
 
-<h3 id="quant">Algorithmic Trading Research Club @ SQR</h3>
-<small><a href="sqr.kr" target="_blank">Snowball Quantitative Research</a></small> <br>
-<small>Dec. 2020 - Now</small>
-<ul style="font-family: 'Georgia';">
-    <li>
-        Review: Isolating Momentum Crashes
-        <small>Nov. 2021</small>
-        <br><a href="../slides/2021.11. Review_ Isolating Momentum Crashes.pdf">[pdf]</a>
-    </li>
-    <li>
-        Review: On Persistence in Mutual Fund Performance
-        <small>Oct. 2021</small>
-        <br><a href="../slides/2021.10. Review_ On Persistence in Mutual Fund Performance.pdf">[pdf]</a>
-    </li>
-    <li>
-        Lets Find Mean Reversion Pairs!
-        <small>Jul. 2021</small>
-        <br><a href="../slides/2021.07. Lets Find Mean Reversion Pairs!.pdf">[pdf]</a>
-    </li>
-    <li>
-        I Want to Predict with Transformer
-        <small>Jun. 2021</small>
-        <br> Reviewing ‘Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting’
-        <small>(Haoyi Zhou <i>et al.</i>, AAAI2021)</small>
-        <br><a href="../slides/2021.06. I Want to Predict with Transformer.pdf">[pdf]</a>
-    </li>
-    <li>
-        Heuristic Meta Meta Portfolio
-        <small>Apr. 2021</small>
-        <br><a href="../slides/2021.04. Heuristic Meta Meta Portfolio.pdf">[pdf]</a>
-    </li>
-    <li>
-        Dacon AI Bit Trader Competition Day trading with ARIMA
-        <small>Mar. 2021</small>
-        <br><a href="../slides/2021.03. Dacon BitTrade Competition.pdf">[pdf]</a>
-    </li>
-    <li>
-        몰빵이 왜 좋은 방법이 아니냐면 Reviewing Portfolio Selection Harry Markowitz
-        <small>Dec. 2020</small>
-        <br/> <a href="../slides/2020.12. Portfolio Selection.pdf">[pdf]</a>
-    </li>
-</ul>
-</div>
-<br/>
-© Sungguk Cha | Last update in 22 April 2024
-</center>
+        <div class="talks-container">
+            <h3 id="conferences">Conferences</h3>
+            <ul>
+                <li>
+                    LG Software Developer Conference (LG SDC) 2025 <small>Sep. 2025</small>
+                    <ul><small>
+                            <li>챗봇에 필수가 되어버린 RAG기술, 어떻게 사용되고 어떤 요소기술들이 있을까? <a href="../slides/lgsdc2025.pdf">[pdf]</a>
+                            </li>
+                        </small></ul>
+                </li>
+            </ul>
+
+            <h3 id="lg">LG Uplus</h3>
+            <small>Aug. 2024 - present</small>
+            <ul>
+                <li>
+                    멀티턴 RAG 리라이터, VQA기반 RAG 데이터 구축기
+                    <small>May 2025</small>
+                </li>
+                <li>
+                    멀티모달 reasoning 데이터 만들기
+                    <small>April 2025</small>
+                </li>
+                <li>
+                    싱글턴에서 멀티턴으로 가는 큰 그림
+                    <small>Jan. 2025</small>
+                </li>
+                <li>
+                    언어모델에 눈 달아주기
+                    <small>Sep. 2024</small>
+                </li>
+            </ul>
+
+            <h3 id="ncsoft">NCSOFT</h3>
+            <small>Sep. 2022 - May 2024</small>
+            <ul>
+                <li>
+                    언어모델이 보고 말하도록 가르치기
+                    <small> Apr. 2024 </small>
+                    <ul><small>
+                            <li> Introduction to multimodal visual recognition and reducing visual hallucination </li>
+                    </ul></small>
+                </li>
+                <li>
+                    ICASSP 2024 highlights
+                    <small> Apr. 2024 </small>
+                </li>
+                <li>
+                    GPT-4V: 먼저 개발한 사람들의 보고서, 어쩌면 우리 잘 하고 있을지도?
+                    <small> Oct. 2023 </small>
+                    <ul><small>
+                            <li> Introducing (multimodal) large language model and (visual) hallucination </li>
+                            <li> Brief introduce to our proposed dehallucinative instruction generation </li>
+                            <li> Proposing face understanding data generation for MLLM </li>
+                    </ul></small>
+                </li>
+                <li>
+                    Review: Grounding Language Models to Images for Multimodal Generation
+                    <small> Feb. 2023 </small>
+                </li>
+                <li>
+                    Pseudo Labeling with Inter-Emotion Correlation for Facial Emotion Recognition
+                    <small> Dec. 2022 </small>
+                </li>
+            </ul>
+
+            <h3 id="mindslab">MINDs Lab</h3>
+            <small>Sep. 2020 - Sep. 2022</small>
+            <ul>
+                <li>
+                    Introduction to Human Interaction Recognition
+                    <small>Apr. 2021</small>
+                    <br> <a href="../slides/(220404) Introduction to Human Interaction Recognition.pdf">[pdf]</a>
+                    <a href="https://youtu.be/b6J2yeAF6ec" target="_blank">[youtube]</a>
+                </li>
+                <li>
+                    How Segmentation Model Learns?
+                    <small> Dec. 2021</small>
+                    <br> Review: Per-Pixel Classification is Not All You Need for Semantic Segmentation
+                    <small> Bowen Cheng et al. NeurIPS 2021 </small>
+                    <br> <a
+                        href="../slides/(211220) How Segmentation Model Learns_ Reviewing Per-Pixel Classification is Not All You Need for Semantic Segmentation.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Vision Transformer. 1년이 지난 지금은 어떻게 생겼나?, Transformer에 Convolution을 써보는 것들은 어떨까?
+                    <small>Jul. 2021</small>
+                </li>
+                <li>
+                    Representation Assemble!
+                    <small>Jul. 2021</small>
+                    <br>Introduction to Multi-Modal Joint-Representation Learning
+                    <br><a
+                        href="../slides/(210712) Representation Assemble_ Introduction to Multi-Modal Joint-Representation Learning.pdf">[pdf]</a>
+                </li>
+                <li>
+                    VQA Approach &amp; Dataset Survey
+                    <small>Apr. 2021</small>
+                    <br><a href="../slides/VQA Survey.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Are the Relationships of Class Representations in Vision and Language Similar?
+                    <small>Mar. 2021</small>
+                    <br><a
+                        href="../slides/(210315) Are the Relationships of Class Representations in Vision and Language Similar_.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Font Style Transfer Survey
+                    <small>Mar. 2021</small>
+                    <br><a href="../slides/Font Style Transfer Survey (Distribution ver.).pdf">[pdf]</a>
+                </li>
+                <li>
+                    Representation Learning:
+                    How Should Feature Be Learned in Vision?
+                    <small>Feb. 2021</small>
+                    <br>Introducing CLIP and an Unsupervised Semantic Segmentation Approach
+                    <br> <a href="../slides/(210222) Representation Learning.pdf">[pdf]</a>
+                </li>
+                <li>
+                    How Can We Correlate Inter-Domain Knowledge?
+                    <small>Dec. 2020</small>
+                    <br> Reviewing Consistent Structural Relation Learning for Generalized Zero-Shot Segmentation
+                    <small>(Peike <i>et al.</i>, NeurIPS2020) </small>
+                    <br> <a
+                        href="../slides/(201221) Review_ Consistent Structural Relation Learning for Generalized Zero-Shot Segmentation.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Zero-Shot Semantic Segmentation via Spatial and Multi-Scale Aware Visual Class Embedding
+                    <small>Nov. 2020</small>
+                </li>
+            </ul>
+
+            <h3 id="quant">Algorithmic Trading Research Club @ SQR</h3>
+            <small><a href="sqr.kr" target="_blank">Snowball Quantitative Research</a></small> <br>
+            <small>Dec. 2020 - Now</small>
+            <ul>
+                <li>
+                    Review: Isolating Momentum Crashes
+                    <small>Nov. 2021</small>
+                    <br><a href="../slides/2021.11. Review_ Isolating Momentum Crashes.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Review: On Persistence in Mutual Fund Performance
+                    <small>Oct. 2021</small>
+                    <br><a href="../slides/2021.10. Review_ On Persistence in Mutual Fund Performance.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Lets Find Mean Reversion Pairs!
+                    <small>Jul. 2021</small>
+                    <br><a href="../slides/2021.07. Lets Find Mean Reversion Pairs!.pdf">[pdf]</a>
+                </li>
+                <li>
+                    I Want to Predict with Transformer
+                    <small>Jun. 2021</small>
+                    <br> Reviewing 'Informer: Beyond Efficient Transformer for Long Sequence Time-Series Forecasting'
+                    <small>(Haoyi Zhou <i>et al.</i>, AAAI2021)</small>
+                    <br><a href="../slides/2021.06. I Want to Predict with Transformer.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Heuristic Meta Meta Portfolio
+                    <small>Apr. 2021</small>
+                    <br><a href="../slides/2021.04. Heuristic Meta Meta Portfolio.pdf">[pdf]</a>
+                </li>
+                <li>
+                    Dacon AI Bit Trader Competition Day trading with ARIMA
+                    <small>Mar. 2021</small>
+                    <br><a href="../slides/2021.03. Dacon BitTrade Competition.pdf">[pdf]</a>
+                </li>
+                <li>
+                    몰빵이 왜 좋은 방법이 아니냐면 Reviewing Portfolio Selection Harry Markowitz
+                    <small>Dec. 2020</small>
+                    <br> <a href="../slides/2020.12. Portfolio Selection.pdf">[pdf]</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            © Sungguk Cha | Last update in 22 April 2024
+        </div>
+    </div>
+</body>
+
+</html>

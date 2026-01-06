@@ -6,98 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sungguk Cha Curriculum Vitae</title>
 
-    <!-- External Scripts -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8HLWH7D"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-7VG8HLWH7D');
-    </script>
-
-    <!-- Internal Styles -->
-    <style>
-        body {
-            background-color: #ffffff;
-            font-family: 'Georgia';
-        }
-
-        details {
-            text-align: left;
-        }
-
-        details.expand-section {
-            text-align: left;
-            display: inline-block;
-            margin: 0;
-        }
-
-        details[open] ul {
-            display: block;
-        }
-
-        summary {
-            cursor: pointer;
-            padding: 0;
-            border: none;
-            display: inline;
-            text-align: left;
-        }
-
-        summary::-webkit-details-marker {
-            display: none;
-        }
-
-        #container {
-            background: #ffffff;
-            width: 50%;
-            /* height: 250px; */
-            margin: 0 auto; /* Center the container */
-        }
-
-        #item {
-            border: 1px solid #ffffff;
-            display: inline;
-        }
-
-        .job-period {
-            float: right;
-        }
-
-        h1, h2, h3 {
-            text-align: left;
-        }
-
-        ul {
-            text-align: left;
-            line-height: 1.8em;
-            font-family: 'Georgia';
-        }
-
-        a {
-            color: #000; /* Change link color */
-        }
-
-        center {
-            text-align: center;
-        }
-
-        hr {
-            border: 0; /* No border */
-            height: 1px; /* Height of the line */
-            background-image: linear-gradient(to right, transparent, #ccc, transparent); /* Dotted line */
-            margin: 20px 0; /* Margin for spacing */
-        }
-
-
-    </style>
+    <script src="../scripts.js"></script>
 </head>
 
 <body>
-    <center>
-
-        <div id="container">
+    <div class="center-content">
+        <div class="container">
             <h1>Sungguk Cha</h1>
 
             <ul>
@@ -106,35 +25,49 @@
                 <li><a href="#experiences">Experiences</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#educations">Educations</a></li>
-                <li><a href="#honors">Honors & Awards</a></li>
+                <li><a href="#honors">Honors &amp; Awards</a></li>
                 <li><a href="#teaching">Teaching</a></li>
                 <li><a href="#skills">Skills</a></li>
             </ul>
+
             <!-- Biography -->
             <hr>
             <h2 id="biography">Biography</h2>
-            <p style="text-align: left">
-                I am Researcher at the RAG AI Team of LG Uplus
-                    supervised by <a href="https://scholar.google.com/citations?user=3ABfbsMAAAAJ&hl=ko" target="_blank">Dr. Mintae Kim</a>.
-                Before that, I have spent wonderful times as a Technical Research Personnel for the military duty 
-                working with 
-                    <a href="https://scholar.google.co.kr/citations?user=dpCZzMEAAAAJ" target="_blank">Dr. Cheoljong Yang</a>
-                    and <a href="https://scholar.google.co.kr/citations?user=09JOeG8AAAAJ" target="_blank">Jusung Lee</a>
-                    at <a href="https://ncsoft.com" target="_blank">NCSOFT</a>, 
+            <p>
+                I am Researcher at the Service AI Research Team of LG Uplus
+                closely working with <a href="https://scholar.google.com/citations?user=3ABfbsMAAAAJ&hl=ko"
+                    target="_blank">Dr. Mintae Kim</a> and DongWook Kim.
+                Before that, I have spent wonderful times as a Technical Research Personnel for the military duty
+                working with
+                <a href="https://scholar.google.co.kr/citations?user=dpCZzMEAAAAJ" target="_blank">Dr. Cheoljong
+                    Yang</a>
+                and <a href="https://scholar.google.co.kr/citations?user=09JOeG8AAAAJ" target="_blank">Jusung Lee</a>
+                at <a href="https://ncsoft.com" target="_blank">NCSOFT</a>,
                 and a number of fantastic colleagues at <a href="https://maum.ai" target="_blank">MINDs Lab Inc.</a>
-	            I obtained my M.S. degree in Ulsan National Institute of Science and Technology. <br>
+                I obtained my M.S. degree in Ulsan National Institute of Science and Technology. <br>
                 <br>
-                My research interests cover the broad area of machine learning, multi-modal learning, computer vision, language modeling and quantitative finance. 
-                My current position focuses on synthesizing train/evaluate data for (vision-)language models. 
+                My research interests cover the broad area of machine learning, multi-modal learning, computer vision,
+                language modeling and quantitative finance.
+                My current position focuses on synthesizing train/evaluate data for (vision-)language models.
             </p>
 
             <!-- Publications -->
             <hr>
             <h2 id="publications">Publications</h2>
             <ul>
+                <!-- ReinPool -->
+                <li>
+                    <!-- <a href="" target="_blank">Reinforcement Learning Pooling Multi-modal Multi-Vector Embeddings</a> -->
+                    Reinforcement Learning Pooling Multi-modal Multi-Vector Embeddings
+                    <br>
+                    <strong>Sungguk Cha</strong>, DongWook Kim, Heonjin Ha, Mintae Kim, Youngsub Han, Byoung-Ki Jeon
+                    <br>
+                    Preprint, 2026.
+                </li>
                 <!-- RL-QR -->
                 <li>
-                    <a href="https://arxiv.org/abs/2507.23242" target="_blank">Generalized Reinforcement Learning for Retriever-Specific Query Rewriter with Unstructured Real-World Documents</a>
+                    <a href="https://arxiv.org/abs/2507.23242" target="_blank">Annotation-Free Reinforcement Learning
+                        Query Rewriting via Verifiable Search Reward</a>
                     <br>
                     <strong>Sungguk Cha</strong>, DongWook Kim, Taeseung Hahn, Mintae Kim, Youngsub Han, Byoung-Ki Jeon
                     <br>
@@ -142,7 +75,8 @@
                 </li>
                 <!-- IDK -->
                 <li>
-                    <a href="https://arxiv.org/abs/2402.09717" target="_blank">Visually Dehallucinative Instruction Generation: Know What You Don't Know</a>
+                    <a href="https://arxiv.org/abs/2402.09717" target="_blank">Visually Dehallucinative Instruction
+                        Generation: Know What You Don't Know</a>
                     <br>
                     <strong>Sungguk Cha</strong>, Jusung Lee, Younghyun Lee, Cheoljong Yang.
                     <br>
@@ -150,15 +84,18 @@
                 </li>
                 <!-- CAP2QA -->
                 <li>
-                    <a href="https://arxiv.org/abs/2402.08348" target="_blank">Visually Dehallucinative Instruction Generation</a>
+                    <a href="https://arxiv.org/abs/2402.08348" target="_blank">Visually Dehallucinative Instruction
+                        Generation</a>
                     <br>
                     <strong>Sungguk Cha</strong>, Jusung Lee, Younghyun Lee, Cheoljong Yang.
                     <br>
-                    Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2024.
+                    Proceedings of IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP),
+                    2024.
                 </li>
                 <!-- VQA-IN -->
                 <li>
-                    <a href="https://arxiv.org/abs/2402.08360" target="_blank">Question Answer Instruction: Unlocking Multi-Modal Large Language Model to Domain-Specific Visual Multi-Tasks</a>
+                    <a href="https://arxiv.org/abs/2402.08360" target="_blank">Question Answer Instruction: Unlocking
+                        Multi-Modal Large Language Model to Domain-Specific Visual Multi-Tasks</a>
                     <br>
                     Jusung Lee, <strong>Sungguk Cha</strong>, Younghyun Lee, Cheoljong Yang.
                     <br>
@@ -166,7 +103,8 @@
                 </li>
                 <!-- SM-VCENet -->
                 <li>
-                    <a href="https://arxiv.org/abs/2111.15181" target="_blank">Zero-Shot Semantic Segmentation via Spatial and Multi-scale aware Visual Class Embedding</a>
+                    <a href="https://arxiv.org/abs/2111.15181" target="_blank">Zero-Shot Semantic Segmentation via
+                        Spatial and Multi-scale aware Visual Class Embedding</a>
                     <br>
                     <strong>Sungguk Cha*</strong>, Yooseung Wang*.
                     <br>
@@ -176,23 +114,26 @@
 
             <!-- Acknowledgements -->
             <h3 id="acknowledgements">Acknowledgements</h3>
-            <!-- StarCraft AI -->
             <ul>
                 <li>
                     Top Finisher in StarCarft AI Tournaments <br>
                     Entry name: Zia Bot
                 </li>
                 <ul>
-                <li>
-                    <a href="https://certicky.github.io/files/publications/aiide17-certicky-churchill.pdf" target="_blank"> StarCraft AI Competitions, Bots and Tournament Manager Software. </a><br>
+                    <li>
+                        <a href="https://certicky.github.io/files/publications/aiide17-certicky-churchill.pdf"
+                            target="_blank">StarCraft AI Competitions, Bots and Tournament Manager Software.</a><br>
                         Michal Čertický, David Churchill, Kyung-Joong Kim, Martin Čertický, Richard Kelly. <br>
-                        IEEE Transactions on Games (ToG): 1-13. DOI: 10.1109/TG.2018.2883499. Print ISSN: 2475-1502. Online ISSN: 2475-1510. 2018. <br>
-                </li>
-                <li>
-                    <a href="https://certicky.github.io/files/publications/aiide17-certicky-churchill.pdf" target="_blank">The Current State of StarCraft AI Competitions and Bots.</a><br>
+                        IEEE Transactions on Games (ToG): 1-13. DOI: 10.1109/TG.2018.2883499. Print ISSN: 2475-1502.
+                        Online ISSN: 2475-1510. 2018. <br>
+                    </li>
+                    <li>
+                        <a href="https://certicky.github.io/files/publications/aiide17-certicky-churchill.pdf"
+                            target="_blank">The Current State of StarCraft AI Competitions and Bots.</a><br>
                         M. Čertický, D. Churchill. <br>
-                        In Proceedings of the AIIDE 2017 Workshop on Artificial Intelligence for Strategy Games. 2017. <br>
-                </li>
+                        In Proceedings of the AIIDE 2017 Workshop on Artificial Intelligence for Strategy Games. 2017.
+                        <br>
+                    </li>
                 </ul>
             </ul>
 
@@ -200,74 +141,95 @@
             <hr>
             <h2 id="experiences">Experiences</h2>
 
-
             <!-- LG -->
             <h3 id="lg">LG Uplus</h3>
             <span class="job-period">August 2024 - Present</span>
             <br>
             <ul>
                 <li>
-                   RAG AI Technical Team
-                   <small> (Jan. 2025 - Present) </small>
-                   <ul>
-                       <li>
-                           Reference: <a href="https://scholar.google.com/citations?user=3ABfbsMAAAAJ&hl=ko" target="_blank">Dr. Mintae Kim</a>
-                       </li>
-                       <li>
-                           Multimodal RAG, document question answering
-						   	<ul>
-								<li>
-									Multimodal RAG framework implementation including document embedding and question answering. 
-								</li>
-							</ul>
-                       </li>
+                    Service AI Research Team
+                    <small> (Jan. 2026 - Present) </small>
+                    <ul>
                         <li>
-                            Multi-turn RAG agent developments and evaluation dealing with the company secretary documents. (reference <a href="https://github.com/shing100" target="_blank">Geun Lim</a>)
-		            		<ul>
-            					<li>
-            						Bulit the train/evaluate data for the multiturn query rewrite agent.
-            					</li>
+                            Reference: <a href="https://scholar.google.com/citations?user=3ABfbsMAAAAJ&hl=ko"
+                                target="_blank">Dr. Mintae Kim</a>
+                        </li>
+                        <li>
+                            Researches on RAG agentic services. Specifically multimodal embedding, indexing, and agentic
+                            parsing.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    RAG AI Technical Team
+                    <small> (Jan. 2025 - Dec. 2025) </small>
+                    <ul>
+                        <li>
+                            Reference: <a href="https://scholar.google.com/citations?user=3ABfbsMAAAAJ&hl=ko"
+                                target="_blank">Dr. Mintae Kim</a>
+                        </li>
+                        <li>
+                            Multimodal RAG, document question answering
+                            <ul>
+                                <li>
+                                    Multimodal RAG framework implementation including document embedding and question
+                                    answering.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Multi-turn RAG agent developments and evaluation dealing with the company secretary
+                            documents. (reference <a href="https://github.com/shing100" target="_blank">Geun Lim</a>)
+                            <ul>
+                                <li>
+                                    Bulit the train/evaluate data for the multiturn query rewrite agent.
+                                </li>
                                 <li>
                                     Built the evaluate data and the llm-as-judge model for the multiturn RAG scenario.
                                 </li>
                                 <li>
-                                    Closely worked with the related departments preparing benchmarks, data and handling issues related to the RAG system. 
+                                    Closely worked with the related departments preparing benchmarks, data and handling
+                                    issues related to the RAG system.
                                 </li>
-            				</ul>
+                            </ul>
                         </li>
-					   <li>
-						   Document Parsing (reference <a href="https://www.linkedin.com/in/soyeonjo-ai/" target="_blank">Soyeon Jo</a>, <a href="https://github.com/hihunjin" target="_blank">Heonjin Ha</a>)
-						   <ul>
-							   <li>
-								   Advancing document parsing (Document Layout Analysis(DLA), VLM parsing) : analysis, evaluation and synthesizing.
-							   </li>
-						   </ul>
-					   </li>
-					   <li>
-						   Query Rewriting (reference <a href="https://github.com/dataLama" target="_blank">DongWook Kim</a>, <a href="https://taes.me/" target="_blank">Taeseung Hahn</a>)
-						   <ul>
-							   (Data, Index)-agnostic query rewriting approach for retrieval system. 
-						   </ul>
-					   </li>
-                   </ul>
+                        <li>
+                            Document Parsing (reference <a href="https://www.linkedin.com/in/soyeonjo-ai/"
+                                target="_blank">Soyeon Jo</a>, <a href="https://github.com/hihunjin"
+                                target="_blank">Heonjin Ha</a>)
+                            <ul>
+                                <li>
+                                    Advancing document parsing (Document Layout Analysis(DLA), VLM parsing) : analysis,
+                                    evaluation and synthesizing.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Query Rewriting (reference <a href="https://github.com/dataLama" target="_blank">DongWook
+                                Kim</a>, <a href="https://taes.me/" target="_blank">Taeseung Hahn</a>)
+                            <ul>
+                                (Data, Index)-agnostic query rewriting approach for retrieval system.
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
-               <li>
+                <li>
                     LLM Technical Team
                     <small> (Aug. 2024 - Dec. 2024) </small>
                     <ul>
                         <li>Developed multi-turn RAG data synthesis approaches.</li>
                         <li>MWC 2025 preparation. LLM for digital humanoid implementation.</li>
                     </ul>
-               </li>
+                </li>
             </ul>
 
             <!-- OAQ -->
-             <h3 id="oaq">OAQ Co. Ltd.</h3>
-             <span class="job-period">June 2024 - March 2025</span>
-             <br>
-             <ul>
+            <h3 id="oaq">OAQ Co. Ltd.</h3>
+            <span class="job-period">June 2024 - March 2025</span>
+            <br>
+            <ul>
                 <li>Auditor</li>
-             </ul>
+            </ul>
 
             <!-- NCSOFT -->
             <h3 id="ncsoft">NCSOFT</h3>
@@ -280,25 +242,31 @@
                 </li>
 
                 <li>
-                    Image Generation Team, Multimodal AI Lab. 
+                    Image Generation Team, Multimodal AI Lab.
                     <small> (Feb. 2024 - May 2024) </small>
                     <ul>
                         <li>VQA (VLM) research and development for digital humans.</li>
-                        <li>Multi-modal model research and development for game-domain. It includes multi-modal crawling webscale data.</li>
-                        <li>Image captioning research for image generative models for game-domain. It replaced human-annotation in captioning (tagging) and resulted dramatic improvements in developing image generative models. </li>
+                        <li>Multi-modal model research and development for game-domain. It includes multi-modal crawling
+                            webscale data.</li>
+                        <li>Image captioning research for image generative models for game-domain. It replaced
+                            human-annotation in captioning (tagging) and resulted dramatic improvements in developing
+                            image generative models. </li>
                     </ul>
                 </li>
 
                 <li>
-                    Recognition Team, Vision AI Lab., NC Research 
+                    Recognition Team, Vision AI Lab., NC Research
                     <small> (Sep. 2022 - Feb. 2024) </small>
                     <ul>
-                        <li> Multimodal Recognition AI: Generated multi-modal data for novel tasks. Researched on evaluating large multimodal models. Responsible and dehallucinative multimodal data generation.  </li>
+                        <li> Multimodal Recognition AI: Generated multi-modal data for novel tasks. Researched on
+                            evaluating large multimodal models. Responsible and dehallucinative multimodal data
+                            generation. </li>
                         <li> Conversational AI </li>
                         <li> Facial Expression Recognition </li>
                     </ul>
                 </li>
             </ul>
+
             <!-- MINDs Lab -->
             <h3 id="mindslab">MINDs Lab., Inc.</h3>
             <span class="job-period">Sep. 2020 - Sep. 2022</span>
@@ -312,15 +280,22 @@
                 <li>
                     Senior AI Scientist
                     <small> (Mar. 2021 - Sep. 2022) </small>
-                    <ul><li>
-                        Co-led the research team (HR, managing, etc.)
-                    </li></ul>
+                    <ul>
+                        <li>
+                            Co-led the research team (HR, managing, etc.)
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    Developed and implemented fundamental visual recognition applications, focusing on classification such as firearms and OCR, detection including mover objects and car damage, segmentation with a specialization in fashion items, and person re-identification for tracking corona-infected individuals.
+                    Developed and implemented fundamental visual recognition applications, focusing on classification
+                    such as firearms and OCR, detection including mover objects and car damage, segmentation with a
+                    specialization in fashion items, and person re-identification for tracking corona-infected
+                    individuals.
                 </li>
                 <li>
-Contributed to Conversational AI, specializing in human-object interaction through achievements in Visual Question Answering, ATM abnormal behavior detection, and human-object detection/classification.
+                    Contributed to Conversational AI, specializing in human-object interaction through achievements in
+                    Visual Question Answering, ATM abnormal behavior detection, and human-object
+                    detection/classification.
                 </li>
             </ul>
 
@@ -350,9 +325,9 @@ Contributed to Conversational AI, specializing in human-object interaction throu
                     StarCraft AI Algorithm
                 </li>
             </ul>
-            
+
             <!-- MLAI -->
-            <h3 id="mlai">Machine Learning & Artificial Intelligence</h3>
+            <h3 id="mlai">Machine Learning &amp; Artificial Intelligence</h3>
             <span class="job-period">Sep. 2017 - Dec 2017</span>
             <br>
             <ul>
@@ -378,26 +353,27 @@ Contributed to Conversational AI, specializing in human-object interaction throu
                 </li>
             </ul>
 
-		<!-- Professional Services-->
-        <hr>
-		<h2 id="services">Professional Services</h2>
-			<!-- Talks -->
-			<h3 id="talks">Conference Talks:</h3>
-			<ul>
-				<li>LG Software Developer Conference (LG SDC) 2025.</li>
-			</ul>
-            
+            <!-- Professional Services-->
+            <hr>
+            <h2 id="services">Professional Services</h2>
+
+            <!-- Talks -->
+            <h3 id="talks">Conference Talks:</h3>
+            <ul>
+                <li>LG Software Developer Conference (LG SDC) 2025.</li>
+            </ul>
+
             <!-- Reviews -->
             <h3 id="reviewer">Conference Reviewer:</h3>
             <ul>
-		<li>Association for the Advancement of Artificial Intelligence (AAAI) 2026.</li>
+                <li>Association for the Advancement of Artificial Intelligence (AAAI) 2026.</li>
                 <li>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) 2025, 2026.</li>
                 <li>IEEE International Joint Conference on Neural Networks (IJCNN) 2025.</li>
             </ul>
 
-        <!-- Educations -->
-        <hr>
-        <h2 id="educations">Educations</h2>
+            <!-- Educations -->
+            <hr>
+            <h2 id="educations">Educations</h2>
             <h3>Ulsan National Institute of Science and Technology</h3>
             <span class="job-period">Mar. 2019 - Feb. 2021</span>
             <br>
@@ -424,82 +400,83 @@ Contributed to Conversational AI, specializing in human-object interaction throu
 
             <!-- Honors & Awards -->
             <hr>
-            <h2 id="honors">Honors & Awards</h2>
+            <h2 id="honors">Honors &amp; Awards</h2>
             <ul>
                 <li>
                     Dacon AI Bit Trader Competition <strong>29th (Top 21%)</strong>
                     <small>Mar 2021</small>
                 </li>
                 <li>
-                    NAVER LABS Mapping & Localization Challenge
+                    NAVER LABS Mapping &amp; Localization Challenge
                     8th place
                     <small>Jun 2020</small>
                 </li>
-                <li>Kaggle/iMaterialist (Fashion) 2019 at FGVC6/fashion item panoptic segmentation/(29th/194 (Top 15%))</li>
+                <li>Kaggle/iMaterialist (Fashion) 2019 at FGVC6/fashion item panoptic segmentation/(29th/194 (Top 15%))
+                </li>
                 <li>Kaggle/Google Analytics Customer Revenue Prediction/(570th/3611 (Top16%))</li>
                 <li>
-                    Student StarCraft AI Tournament 
+                    Student StarCraft AI Tournament
                     <strong>4th</strong>
                     <small>Feb 2018</small>
                 </li>
                 <li>
                     Naver UNIST Undergraduate Poster Award, <strong> Bronze </strong> Prize
-                    <small>Dec 2017</small> <br/>
+                    <small>Dec 2017</small> <br>
                     Topic: Reinforcement Learning in StarCraft in Real-Time using Deep Learning
                 </li>
                 <li>
                     Samsung Dream Class Mentoring Scholarship
-		            <small>Spring 2017</small>
+                    <small>Spring 2017</small>
                 </li>
                 <li>
                     AAAI AIIDE StarCraft AI Competition, 28th
-		            <small>2017</small>
+                    <small>2017</small>
                 </li>
                 <li>
                     IEEE CIG StarCraft AI Competition <strong> 3rd </strong>
-		            <small>2017</small>
+                    <small>2017</small>
                 </li>
                 <li>
                     Student StarCraft AI Tournament <strong> 3rd </strong>
-		            <small>Feb 2017</small>
+                    <small>Feb 2017</small>
                 </li>
                 <li>
                     AAAI AIIDE StarCraft AI Competition, 11th
-		            <small>2016</small>
+                    <small>2016</small>
                 </li>
                 <li>
-                    IEEE CIG StarCraft AI Competition 10th 
-		            <small>2016</small>
+                    IEEE CIG StarCraft AI Competition 10th
+                    <small>2016</small>
                 </li>
                 <li>
                     Korean Olympiad of Informatics <strong> Encouragement</strong> Prize
                     <small>2013</small>
-                    <br/>
+                    <br>
                     Regional representative of Daejeon
                 </li>
                 <li>
                     Daejeon Olympiad of Informatics <strong>Gold Prize</strong>
-		            <small>2013</small>
+                    <small>2013</small>
                 </li>
                 <li>
                     Korean Olympiad of Informatics <strong> Encouragement</strong> Prize
                     <small>2012</small>
-                    <br/>
+                    <br>
                     Regional representative of Daejeon
                 </li>
                 <li>
                     Daejeon Olympiad of Informatics <strong>Gold Prize</strong>
-		            <small>2012</small>
+                    <small>2012</small>
                 </li>
                 <li>
                     Korean Olympiad of Informatics <strong> Encouragement</strong> Prize
                     <small>2010</small>
-                    <br/>
+                    <br>
                     Regional representative of Daejeon
                 </li>
                 <li>
                     Daejeon Olympiad of Informatics <strong>Gold Prize</strong>
-		            <small>2010</small>
+                    <small>2010</small>
                 </li>
             </ul>
 
@@ -509,24 +486,24 @@ Contributed to Conversational AI, specializing in human-object interaction throu
             <ul>
                 <li>
                     [TA] UNIST/CSE241: Object Oriented Programming
-		            <small>Spring 2020</small>
+                    <small>Spring 2020</small>
                 </li>
                 <li>
                     [TA] UNIST/CSE251: System Programming
-		            <small>Fall 2019</small>
+                    <small>Fall 2019</small>
                 </li>
                 <li>
                     <strong>[Tutor] PyCon Korea </strong>
-                    <small>Aug 2019</small> <br/>
+                    <small>Aug 2019</small> <br>
                     Topic: Explainable AI
                 </li>
                 <li>
                     [TA] UNIST/ITP117: Introduction to AI Programming II
-		            <small>Spring 2019</small>
+                    <small>Spring 2019</small>
                 </li>
                 <li>
                     [TA] UNIST/AHS161: What is "I"
-		            <small>Spring, Fall 2017</small>
+                    <small>Spring, Fall 2017</small>
                 </li>
             </ul>
 
@@ -552,13 +529,10 @@ Contributed to Conversational AI, specializing in human-object interaction throu
 
         </div>
 
-        <br>© Sungguk Cha <br>
-    </center>
+        <div class="footer">
+            © Sungguk Cha
+        </div>
+    </div>
 </body>
 
 </html>
-
-
-
-
-
