@@ -1,44 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sungguk Cha</title>
+
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7VG8HLWH7D"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-7VG8HLWH7D');
-    </script>
+    <script src="scripts.js"></script>
 </head>
-<title> Sungguk Cha </title>
-<center>
-<h1>Sungguk Cha</h1>
-<img onclick='move("pages/home.html")' id="home" src="images/thumbnails/home.jpg" width="75">
-<img onclick='move("pages/cv.html")' id="cv" src="images/thumbnails/cv.jpg" width="75">
-<img onclick='move("pages/talks.html")' id="cv" src="images/thumbnails/talknnote.jpg" width="75">
-<!--
-<img onclick='move("pages/rnd.html")' id="cv" src="images/thumbnails/rnd.jpg" width="75">
-<a href="https://www.notion.so/Daily-Log-7d289583d0444dc8b0088d4397dcf26e" target="_blank"><img src="images/thumbnails/diary.jpg" width="75"></a>
-<img onclick='move("pages/ncrock.html")' id="cv" src="images/thumbnails/ncofrock.jpg" width="75">
--->
-<img onclick='move("pages/crescendo.html")' id="cv" src="images/thumbnails/crescendo.jpg" width="75">
 
-<br/>
-<iframe id="myframe" src="pages/home.html" width=100% frameborder=0 framespacing=0 marginheight=0 marginwidth=0>
-</iframe>
-<script>
-    function move(url){
-        $("#myframe").attr('src', url)
-        var height = window.innerHeight;
-        $('#myframe').css('height', height); 
-        $(window).resize(function(){
-        　var height = window.innerHeight;
-        　$('#myframe').css('height', height);
-        });
-    }
-    move("pages/home.html")
-</script>
-</center>
+<body>
+    <div class="center-content">
+        <h1>Sungguk Cha</h1>
+
+        <div>
+            <img onclick="move('pages/home.html')" class="nav-thumbnail" src="images/thumbnails/home.jpg" width="75"
+                alt="Home">
+            <img onclick="move('pages/cv.html')" class="nav-thumbnail" src="images/thumbnails/cv.jpg" width="75"
+                alt="CV">
+            <img onclick="move('pages/talks.html')" class="nav-thumbnail" src="images/thumbnails/talknnote.jpg"
+                width="75" alt="Talks">
+            <img onclick="move('pages/crescendo.html')" class="nav-thumbnail" src="images/thumbnails/crescendo.jpg"
+                width="75" alt="Crescendo">
+        </div>
+
+        <iframe id="myframe" src="pages/home.html" width="100%" frameborder="0"></iframe>
+    </div>
+</body>
+
 </html>
