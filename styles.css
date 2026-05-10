@@ -153,3 +153,71 @@ summary::-webkit-details-marker {
         width: 90%;
     }
 }
+
+/* Print Styles */
+@media print {
+    @page {
+        size: letter;
+        margin: 0.55in;
+    }
+
+    body.cv-page {
+        font-size: 10pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .cv-page .center-content {
+        display: block;
+        text-align: left;
+    }
+
+    .cv-page .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .cv-page .cv-nav,
+    .cv-page .footer {
+        display: none;
+    }
+
+    .cv-page h1 {
+        font-size: 20pt;
+        margin: 0 0 0.16in;
+    }
+
+    .cv-page h2 {
+        font-size: 14pt;
+        margin: 0.12in 0 0.06in;
+    }
+
+    .cv-page h3 {
+        font-size: 11pt;
+        margin: 0.1in 0 0.04in;
+    }
+
+    .cv-page p {
+        margin: 0 0 0.08in;
+    }
+
+    .cv-page ul {
+        line-height: 1.35;
+        margin-top: 0.03in;
+        margin-bottom: 0.06in;
+        padding-left: 0.22in;
+    }
+
+    .cv-page li {
+        break-inside: avoid;
+        margin-bottom: 0.02in;
+    }
+
+    .cv-page #skills + ul li {
+        break-inside: auto;
+    }
+
+    .cv-page hr {
+        margin: 0.11in 0;
+    }
+}
