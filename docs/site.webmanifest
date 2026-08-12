@@ -1,0 +1,10 @@
+{
+  "name": "Sungguk Cha — AI Researcher",
+  "short_name": "Sungguk Cha",
+  "description": "Research in retrieval, multimodal learning, and agentic systems.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2efe5",
+  "theme_color": "#f2efe5",
+  "icons": []
+}

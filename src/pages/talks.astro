@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { talks } from '../data/content';
+---
+
+<BaseLayout title="Talks & Notes — Sungguk Cha" description="Conference talks, internal research notes, and lectures by Sungguk Cha.">
+  <section class="page-hero talks-hero">
+    <div class="shell page-hero-grid">
+      <div>
+        <p class="page-kicker">Talks & notes · 2020—2026</p>
+        <h1>Thinking<br /><em>out loud.</em></h1>
+      </div>
+      <p class="page-lede">Conference talks, internal seminars, and working notes on retrieval, multimodal learning, computer vision, and quantitative research.</p>
+    </div>
+  </section>
+
+  <section class="section talks-page-section">
+    <div class="shell">
+      <div class="talks-section-heading">
+        <span>01</span><h2>Public & conference talks</h2>
+      </div>
+      <div class="featured-talks">
+        {talks.external.map((talk, index) => (
+          <article class="featured-talk reveal">
+            <span class="talk-index">{String(index + 1).padStart(2, '0')}</span>
+            <div>
+              <p>{talk.date} · {talk.type}</p>
+              <h3>{talk.url ? <a href={talk.url} target="_blank" rel="noreferrer">{talk.title}</a> : talk.title}</h3>
+              <p>{talk.event}</p>
+            </div>
+            {talk.url && <a class="round-link" href={talk.url} target="_blank" rel="noreferrer" aria-label={`Open ${talk.title}`}>↗</a>}
+          </article>
+        ))}
+      </div>
+
+      <div class="talks-section-heading talks-subheading">
+        <span>02</span><h2>Research seminars</h2>
+      </div>
+      <div class="notes-ledger">
+        {talks.internal.map((talk) => (
+          <article class="note-row reveal">
+            <p class="note-date">{talk.date}</p>
+            <div>
+              <h3>{talk.title}</h3>
+              {talk.note && <p>{talk.note}</p>}
+            </div>
+            <p class="note-org">{talk.organization}</p>
+          </article>
+        ))}
+      </div>
+
+      <div class="talks-section-heading talks-subheading">
+        <span>03</span><h2>Quant notes</h2>
+      </div>
+      <p class="section-intro">Selected sessions from Snowball Quantitative Research, 2020—2021.</p>
+      <div class="quant-grid">
+        {talks.quant.map((talk) => (
+          <article class="quant-note reveal">
+            <p>{talk.date}</p>
+            <h3>{talk.title}</h3>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

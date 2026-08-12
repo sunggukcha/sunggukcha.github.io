@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { publications, experiences, talks, cv } from '../data/content';
+import { SITE } from '../data/site';
+
+const sectionLinks = [
+  ['Summary', 'summary'],
+  ['Publications', 'publications'],
+  ['Experience', 'experience'],
+  ['Education', 'education'],
+  ['Service', 'service'],
+  ['Honors', 'honors'],
+  ['Teaching', 'teaching'],
+  ['Skills', 'skills'],
+];
+---
+
+<BaseLayout title="Curriculum Vitae — Sungguk Cha" description="Curriculum vitae of Sungguk Cha, AI researcher in retrieval, multimodal learning, and agentic systems.">
+  <section class="page-hero cv-hero">
+    <div class="shell page-hero-grid">
+      <div>
+        <p class="page-kicker">Curriculum Vitae · Updated Aug. 2026</p>
+        <h1>Sungguk Cha</h1>
+        <p class="page-lede">AI researcher building retrieval, multimodal, and agentic systems that stay connected to evidence.</p>
+      </div>
+      <div class="cv-actions">
+        <a class="button button-primary" href="/cv.pdf" target="_blank">Download PDF <span aria-hidden="true">↓</span></a>
+        <button class="button button-secondary" type="button" data-print-cv>Print this page</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="shell cv-layout">
+    <aside class="cv-sidebar">
+      <nav aria-label="CV sections">
+        <p>On this page</p>
+        {sectionLinks.map(([label, id]) => <a href={`#${id}`}>{label}</a>)}
+      </nav>
+      <div class="cv-contact">
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        {SITE.socials.map((social) => <a href={social.href} target="_blank" rel="noreferrer">{social.label} ↗</a>)}
+      </div>
+    </aside>
+
+    <article class="cv-document">
+      <section class="cv-section" id="summary">
+        <p class="cv-section-label">Profile</p>
+        <h2>Summary</h2>
+        <p class="cv-summary">I am a researcher in the Service AI Research Team at LG Uplus. My work spans information retrieval, multimodal learning, document intelligence, and agentic systems. Previously, I developed multimodal and computer-vision systems at NCSOFT and MINDs Lab. I received my M.S. in Computer Science and Engineering from UNIST.</p>
+      </section>
+
+      <section class="cv-section" id="publications">
+        <p class="cv-section-label">Research output · {publications.length}</p>
+        <h2>Publications</h2>
+        <ol class="cv-publications">
+          {publications.map((publication) => (
+            <li>
+              <div class="cv-year">{publication.year}</div>
+              <div>
+                <h3><a href={publication.url} target="_blank" rel="noreferrer">{publication.title}</a></h3>
+                <p class="authors">
+                  {publication.authors.map((author, index) => (
+                    <>{author.startsWith('Sungguk Cha') ? <strong>{author}</strong> : author}{index < publication.authors.length - 1 ? ', ' : ''}</>
+                  ))}
+                </p>
+                <p>{publication.venue}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </section>
+
+      <section class="cv-section" id="experience">
+        <p class="cv-section-label">Industry & research</p>
+        <h2>Experience</h2>
+        <div class="cv-timeline">
+          {experiences.map((experience) => (
+            <article>
+              <div class="cv-time">
+                <span>{experience.period}</span>
+                <i aria-hidden="true"></i>
+              </div>
+              <div>
+                <h3>{experience.url ? <a href={experience.url} target="_blank" rel="noreferrer">{experience.company}</a> : experience.company}</h3>
+                <p class="cv-role">{experience.role}</p>
+                <p>{experience.summary}</p>
+                {experience.highlights.length > 0 && (
+                  <ul>{experience.highlights.map((highlight) => <li>{highlight}</li>)}</ul>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="cv-section" id="education">
+        <p class="cv-section-label">Training</p>
+        <h2>Education</h2>
+        <div class="cv-rows">
+          {cv.education.map((item) => (
+            <article>
+              <div><span>{item.period}</span></div>
+              <div>
+                <h3>{item.school}</h3>
+                <p class="cv-role">{item.degree}</p>
+                <ul>{item.details.map((detail) => <li>{detail}</li>)}</ul>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="cv-section" id="service">
+        <p class="cv-section-label">Community</p>
+        <h2>Talks & Academic Service</h2>
+        <div class="cv-subsection">
+          <h3>Selected talks</h3>
+          <ul class="simple-list">
+            {talks.external.map((talk) => (
+              <li><span>{talk.date}</span><div>{talk.url ? <a href={talk.url} target="_blank" rel="noreferrer">{talk.title}</a> : talk.title}<small>{talk.event}</small></div></li>
+            ))}
+          </ul>
+        </div>
+        <div class="cv-subsection">
+          <h3>Program committee / reviewer</h3>
+          <ul class="simple-list">{cv.service.map((item) => <li><div>{item}</div></li>)}</ul>
+        </div>
+      </section>
+
+      <section class="cv-section" id="honors">
+        <p class="cv-section-label">Recognition</p>
+        <h2>Honors & Awards</h2>
+        <ul class="simple-list">{cv.awards.map((item) => <li><div>{item}</div></li>)}</ul>
+      </section>
+
+      <section class="cv-section" id="teaching">
+        <p class="cv-section-label">Teaching</p>
+        <h2>Teaching</h2>
+        <ul class="simple-list">{cv.teaching.map((item) => <li><div>{item}</div></li>)}</ul>
+      </section>
+
+      <section class="cv-section" id="skills">
+        <p class="cv-section-label">Toolkit</p>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          {Object.entries(cv.skills).map(([category, items]) => (
+            <div>
+              <h3>{category}</h3>
+              <ul>{items.map((item) => <li>{item}</li>)}</ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    </article>
+  </div>
+
+  <script>
+    document.querySelector('[data-print-cv]')?.addEventListener('click', () => window.print());
+  </script>
+</BaseLayout>

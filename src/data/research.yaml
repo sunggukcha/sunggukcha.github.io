@@ -1,0 +1,125 @@
+- id: cross-page-retrieval
+  year: 2026
+  selected: true
+  label: Evidence coverage
+  title: Do Current Retrievers Cover All the Evidence? A Controlled Study of Conjunctive Cross-Page Retrieval
+  authors:
+    - Sungguk Cha
+    - DongWook Kim
+    - Mintae Kim
+    - Youngsub Han
+    - Byoung-Ki Jeon
+    - Sangyeob Lee
+  venue: Preprint, 2026
+  url: https://arxiv.org/abs/2607.24165
+  summary: Tests whether long-document retrievers find every requested piece of evidence—not merely a document that looks relevant.
+  metric: 70 retrieval configurations · 1,000 controlled queries
+  tags: [Document retrieval, Evaluation, Multimodal]
+
+- id: moltbook
+  year: 2026
+  selected: false
+  label: Agent communities
+  title: "Frame Entrepreneurs in an AI Agent Community: Concentrated Identity-Claim Production on Moltbook"
+  authors:
+    - Sungguk Cha
+    - DongWook Kim
+  venue: CITAMS, American Sociological Association, 2026
+  url: https://arxiv.org/abs/2604.27271
+  summary: Studies how identity claims and frames emerge and concentrate inside an AI-agent community.
+  tags: [AI agents, Computational social science]
+
+- id: reinpool
+  year: 2026
+  selected: true
+  label: Efficient retrieval
+  title: "ReinPool: Reinforcement Learning Pooling Multi-Vector Embeddings for Retrieval System"
+  authors:
+    - Sungguk Cha
+    - DongWook Kim
+    - Mintae Kim
+    - Youngsub Han
+    - Byoung-Ki Jeon
+    - Sangyeob Lee
+  venue: Preprint, 2026
+  url: https://arxiv.org/abs/2601.07125
+  summary: Learns which token-level vectors matter, compressing expressive multi-vector document representations into retrieval-optimized single vectors.
+  metric: 746–1,249× compression · 76–81% performance recovered
+  tags: [Reinforcement learning, Embeddings, Retrieval]
+
+- id: rl-query-rewriting
+  year: 2025
+  selected: true
+  label: Search as supervision
+  title: Annotation-Free Reinforcement Learning Query Rewriting via Verifiable Search Reward
+  authors:
+    - Sungguk Cha
+    - DongWook Kim
+    - Taeseung Hahn
+    - Mintae Kim
+    - Youngsub Han
+    - Byoung-Ki Jeon
+  venue: Preprint, 2025
+  url: https://arxiv.org/abs/2507.23242
+  summary: Trains query rewriting without human labels by turning retrieval outcomes into verifiable rewards across index types and modalities.
+  metric: Up to 3.9× retrieval gain on visual documents
+  tags: [RAG, Query rewriting, Reinforcement learning]
+
+- id: idk
+  year: 2024
+  selected: true
+  label: Knowing when not to answer
+  title: "Visually Dehallucinative Instruction Generation: Know What You Don't Know"
+  authors:
+    - Sungguk Cha
+    - Jusung Lee
+    - Younghyun Lee
+    - Cheoljong Yang
+  venue: Preprint, 2024
+  url: https://arxiv.org/abs/2402.09717
+  summary: Builds visual instruction data for questions that cannot be answered from an image, teaching multimodal models to recognize missing evidence.
+  metric: VQAv2-IDK benchmark · IDK-Instructions dataset
+  tags: [Multimodal LLM, Hallucination, Data generation]
+
+- id: cap2qa
+  year: 2024
+  selected: false
+  label: Multimodal instruction
+  title: Visually Dehallucinative Instruction Generation
+  authors:
+    - Sungguk Cha
+    - Jusung Lee
+    - Younghyun Lee
+    - Cheoljong Yang
+  venue: IEEE ICASSP, 2024
+  url: https://arxiv.org/abs/2402.08348
+  summary: Generates grounded visual instructions designed to reduce hallucination in multimodal models.
+  tags: [Multimodal LLM, Data generation]
+
+- id: vqa-in
+  year: 2024
+  selected: false
+  label: Domain adaptation
+  title: "Question Answer Instruction: Unlocking Multi-Modal Large Language Model to Domain-Specific Visual Multi-Tasks"
+  authors:
+    - Jusung Lee
+    - Sungguk Cha
+    - Younghyun Lee
+    - Cheoljong Yang
+  venue: Preprint, 2024
+  url: https://arxiv.org/abs/2402.08360
+  summary: Uses question-answer instructions to adapt multimodal language models to domain-specific visual tasks.
+  tags: [Multimodal LLM, Instruction tuning]
+
+- id: sm-vcenet
+  year: 2022
+  selected: false
+  label: Visual grounding
+  title: Zero-Shot Semantic Segmentation via Spatial and Multi-scale Aware Visual Class Embedding
+  authors:
+    - Sungguk Cha*
+    - Yooseung Wang*
+  venue: Pattern Recognition Letters 158, 87–93, 2022
+  url: https://arxiv.org/abs/2111.15181
+  summary: Connects language-defined classes with spatial and multi-scale visual representations for zero-shot segmentation.
+  tags: [Computer vision, Zero-shot learning, Segmentation]

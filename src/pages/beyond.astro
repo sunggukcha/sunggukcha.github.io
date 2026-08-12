@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const videos = [
+  { id: 'dXpbMRH_33o', title: 'Crescendo at the Blue Festival' },
+  { id: 'EIBkdY-qJKU', title: 'Crescendo orientation performance' },
+  { id: 'xX6acB6B2BA', title: 'Crescendo campus festival' },
+  { id: 'vpHOejoypz0', title: 'Crescendo busking session' },
+  { id: 'MqERj4yVkWw', title: 'Crescendo live performance' },
+  { id: 'VTKb947LSao', title: 'Crescendo club performance' },
+];
+---
+
+<BaseLayout title="Beyond Research — Sungguk Cha" description="Music, bands, and life beyond AI research.">
+  <section class="page-hero beyond-hero">
+    <div class="shell beyond-hero-grid">
+      <div>
+        <p class="page-kicker">Beyond research · Drums / live music</p>
+        <h1>Different loops.<br /><em>Same rhythm.</em></h1>
+      </div>
+      <div class="beyond-hero-copy">
+        <p>I played drums with <strong>Crescendo</strong>, UNIST's indie band, from 2016 to 2019—and led the band from 2016 to 2017. Later, I joined <strong>NC of Rock</strong> at NCSOFT in 2023.</p>
+        <p>Research taught me to listen for weak signals. Bands taught me to leave room for everyone else.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="photo-story shell">
+    <figure class="photo-story-wide reveal">
+      <img src="/images/crescendo.jpg" width="3508" height="2480" alt="Crescendo performing under stage lights" />
+      <figcaption><span>01</span> Crescendo · UNIST · Live</figcaption>
+    </figure>
+    <figure class="photo-story-tall reveal">
+      <img src="/images/crescendo.jpeg" width="1040" height="1477" alt="Members of Crescendo posing together" loading="lazy" />
+      <figcaption><span>02</span> The people behind the sound</figcaption>
+    </figure>
+    <blockquote class="music-quote reveal">
+      <p>“Good research and good music both depend on timing—knowing when to push, and when to listen.”</p>
+    </blockquote>
+  </section>
+
+  <section class="section performance-section">
+    <div class="shell">
+      <div class="talks-section-heading">
+        <span>03</span><h2>Selected performances</h2>
+      </div>
+      <p class="section-intro">Videos load only when you choose one, keeping this page quick and quiet.</p>
+      <div class="video-grid">
+        {videos.map((video, index) => (
+          <button class="video-card reveal" type="button" data-video-id={video.id} aria-label={`Play ${video.title}`}>
+            <span class="video-poster">
+              <img src={`https://i.ytimg.com/vi/${video.id}/hqdefault.jpg`} alt="" loading="lazy" />
+              <span class="video-play" aria-hidden="true">▶</span>
+            </span>
+            <span class="video-meta"><small>{String(index + 1).padStart(2, '0')} · LIVE</small><strong>{video.title}</strong></span>
+          </button>
+        ))}
+      </div>
+      <p class="archive-note">More performances live in the <a href="https://www.facebook.com/Crescendounist/" target="_blank" rel="noreferrer">Crescendo archive on Facebook ↗</a>.</p>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll<HTMLButtonElement>('[data-video-id]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const videoId = button.dataset.videoId;
+        if (!videoId) return;
+        const frame = document.createElement('iframe');
+        frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`;
+        frame.title = button.getAttribute('aria-label')?.replace('Play ', '') || 'Performance video';
+        frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+        frame.allowFullscreen = true;
+        button.replaceWith(frame);
+      });
+    });
+  </script>
+</BaseLayout>

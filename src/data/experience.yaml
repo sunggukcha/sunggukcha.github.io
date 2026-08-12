@@ -1,0 +1,71 @@
+- company: LG Uplus
+  role: Researcher · Service AI Research Team
+  period: Aug. 2024 — Present
+  url: https://www.lguplus.com/
+  featured: true
+  marker: RETRIEVAL / AGENTS
+  summary: Researching retrieval, multimodal representation, and agentic systems for production AI services.
+  highlights:
+    - Multimodal embedding alignment, interleaved-data processing, and GUI agents.
+    - Built and evaluated multimodal and multi-turn RAG systems over complex business documents.
+    - Developed annotation-free query-rewriting methods, evaluation data, and LLM-as-judge pipelines.
+    - Advanced document parsing through layout analysis, VLM parsing, synthesis, and evaluation.
+
+- company: OAQ Co. Ltd.
+  role: Auditor
+  period: Jun. 2024 — Mar. 2025
+  featured: false
+  marker: GOVERNANCE
+  summary: Served as company auditor.
+  highlights: []
+
+- company: NCSOFT
+  role: Researcher · Multimodal AI / Vision AI
+  period: Sep. 2022 — May 2024
+  url: https://www.nc.com/
+  featured: true
+  marker: MULTIMODAL
+  summary: Developed grounded multimodal models and scalable data pipelines for visual understanding and generation.
+  highlights:
+    - Researched VQA and multimodal models for digital-human and game-domain applications.
+    - Built responsible, dehallucinative visual-instruction generation and model-evaluation methods.
+    - Scaled visual data curation and replaced parts of manual captioning and tagging workflows.
+    - Completed alternative military service as Technical Research Personnel.
+
+- company: MINDs Lab (now maum.ai)
+  role: Senior AI Scientist
+  period: Sep. 2020 — Sep. 2022
+  url: https://maum.ai/
+  featured: true
+  marker: VISION
+  summary: Built applied computer-vision systems and helped lead an AI research team.
+  highlights:
+    - Developed classification, detection, segmentation, OCR, and person re-identification systems.
+    - Worked on conversational and human-object interaction AI, including VQA and abnormal-behavior recognition.
+    - Co-led the research team while serving as Technical Research Personnel.
+
+- company: Statistical Artificial Intelligence Lab
+  role: Undergraduate Researcher
+  period: Jul. 2018 — Feb. 2019
+  url: http://sailab.kaist.ac.kr/
+  featured: false
+  marker: RESEARCH
+  summary: Drivable-area semantic segmentation with Prof. Jaesik Choi.
+  highlights: []
+
+- company: Agents and Robotic Transportation Lab
+  role: Undergraduate Researcher
+  period: Dec. 2017 — Feb. 2018
+  featured: false
+  marker: RESEARCH
+  summary: StarCraft AI algorithms with Prof. Tsz-Chiu Au.
+  highlights: []
+
+- company: Machine Learning & Artificial Intelligence Lab
+  role: Undergraduate Researcher
+  period: Sep. 2017 — Dec. 2017
+  url: https://www.mlai-kaist.com/
+  featured: false
+  marker: RESEARCH
+  summary: Variational autoencoders for text with Prof. Sung Ju Hwang.
+  highlights: []
